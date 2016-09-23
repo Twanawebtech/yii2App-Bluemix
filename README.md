@@ -4,7 +4,7 @@
 
 Open your terminal
 ```
-$ git clone URL
+$ git clone https://github.com/Twanawebtech/yii2App-Bluemix.git
 $ cd yii2App
 ```
 Open the manifest.yml file and change the name and host to the app name you want to call it.
