@@ -1,3 +1,56 @@
+## Deploy to Bluemix Yii 2 Basic Project Template
+
+### Step 1 clone the code and setup
+
+Open your terminal
+```
+$ git clone URL
+$ cd yii2App
+```
+Open the manifest.yml file and change the name and host to the app name you want to call it.
+Name and Host must be a unique name that was not taken before, if you selected a name that already been used then you should get error message in your terminal.
+
+Now, with that you are ready to push your app to Bluemix.
+- Given that you already have installed the cloud Foundry CLI, if you haven't there do that first.
+
+
+### Step 2 Deploy your code to Bluemix
+
+Connect to IBM Bluemix
+```
+$ bluemix api https://api.ng.bluemix.net
+bluemix login -u <your bluemix email id> -o "<your bluemix email id>" -s "<your space>"
+```
+
+Login to Bluemix
+```
+$ bluemix api https://api.ng.bluemix.net
+bluemix login -u <your bluemix email id> -o "<your bluemix email id>" -s "<your space>"
+```
+
+Deploy your app to Bluemix
+```
+$ bluemix api https://api.ng.bluemix.net
+bluemix login -u <your bluemix email id> -o "<your bluemix email id>" -s "<your space>"
+```
+
+Push your code to Bluemix
+```
+$ cf push phpinfo-jbs2 -b https://github.com/cloudfoundry/php-buildpack.git -s cflinuxfs2
+```
+
+
+Access your app by entering the following URL into your browser:
+<your-app-name>.mybluemix.net/yii
+
+*Note, this is running the main "Yii 2 with basic application template" for path fixes, refer to the (link here)[http://www.yiiframework.com/download/]*
+
+Done!
+
+
+
+-----
+
 Yii 2 Basic Project Template
 ============================
 
